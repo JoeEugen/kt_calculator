@@ -387,7 +387,7 @@ img {
 }
 
 .spine__table button img {
-    height: 100%;
+    height: 80%;
 }
 
 /* Оптимизация */
@@ -502,10 +502,10 @@ img {
     .spine__table {
         display: grid;
         grid-template-areas:
-            "elips__table__1"
-            "elips__table__2"
-            "elips__table__3"
-            "elips__table__4";
+            "spine__table__1"
+            "spine__table__2"
+            "spine__table__3"
+            "spine__table__4";
         justify-content: center;
 
     }
