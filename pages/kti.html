@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav__sidebar sidebar__hide">
+            <div class="sidebar__open-close__btn sidebar__btn__hide">
+                <img src="../img/arrow_back.svg" alt="">
+            </div>
+            <div class="sidebar__logo">
+                <a href="../index.html">КАЛЬКУЛЯТОР</a>
+            </div>
+            <div class="sidebar__options">
+                <ul>
+                    <li class="sidebar__selected"><a href="./kti.html">Кардиоторакальный индекс (кардиомегалия)</a>
+                    </li>
+                    <li><a href="./liver and spleen.html">Печень, селезенка</a></li>
+                    <li><a href="./adrenal adenoma.html">Индекс вымывания (аденома надпочечника)</a></li>
+                    <li><a href="./anterior horn index.html">Индекс передних рогов головного мозга</a></li>
+                    <li><a href="./lateral ventricular index.html">Индекс боковых желудочков</a></li>
+                    <li><a href="./fourth ventricle index.html">Индекс четвертого желудочка</a></li>
+                    <li><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
+                    <li><a href="./elips.html">Объем элипса, сферы</a></li>
+                    <li><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
+                    <li><a href="#">Контрасты КТ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="kti">
+            <div class="kti__table">
+                <table class="kti__table__inner">
+                    <tr>
+                        <td>Норма</td>
+                        <td>I стадия</td>
+                        <td>II стадия</td>
+                        <td>III стадия</td>
+                    </tr>
+                    <tr>
+                        <td class="green">&#60 50</td>
+                        <td class="yellow">50-56</td>
+                        <td class="orange">56-60</td>
+                        <td class="red">&#62 60</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="kti__calc__1">
+                <table>
+                    <tr>
+                        <td>Диаметр сердца</td>
+                        <td><input type="number" class="kti__calc__heart"></td>
+                    </tr>
+                    <tr>
+                        <td>Диаметр грудной клетки</td>
+                        <td><input type="number" class="kti__calc__chest"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="kti__calc__btn__1">Расчет</button></td>
+                    </tr>
+                    <tr>
+                        <td>Индекс</td>
+                        <td class="kti__index__result"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="kti__calc__2">
+                <table>
+                    <tr>
+                        <td>МРГК</td>
+                        <td><input type="number" class="kti__calc__mrgk"></td>
+                    </tr>
+                    <tr>
+                        <td>ПР</td>
+                        <td><input type="number" class="kti__calc__pr"></td>
+                    </tr>
+                    <tr>
+                        <td>ЛР</td>
+                        <td><input type="number" class="kti__calc__lr"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="kti__calc__btn__2">Расчет</button></td>
+                    </tr>
+                    <tr>
+                        <td>Индекс</td>
+                        <td class="kti__index__result__2"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="kti__image"><img src="../img/kti__img.png" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>

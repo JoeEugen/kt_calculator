@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav__sidebar sidebar__hide">
+            <div class="sidebar__open-close__btn sidebar__btn__hide">
+                <img src="../img/arrow_back.svg" alt="">
+            </div>
+            <div class="sidebar__logo">
+                <a href="#">КАЛЬКУЛЯТОР</a>
+            </div>
+            <div class="sidebar__options">
+                <ul>
+                    <li><a href="./kti.html">Кардиоторакальный индекс (кардиомегалия)</a>
+                    </li>
+                    <li class="sidebar__selected"><a href="./liver and spleen.html">Печень, селезенка</a></li>
+                    <li><a href="./adrenal adenoma.html">Индекс вымывания (аденома надпочечника)</a></li>
+                    <li><a href="./anterior horn index.html">Индекс передних рогов головного мозга</a></li>
+                    <li><a href="./lateral ventricular index.html">Индекс боковых желудочков</a></li>
+                    <li><a href="./fourth ventricle index.html">Индекс четвертого желудочка</a></li>
+                    <li><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
+                    <li><a href="./elips.html">Объем элипса, сферы</a></li>
+                    <li><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
+                    <li><a href="#">Контрасты КТ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container__pis">
+            <div class="pis__calc">
+                <table>
+                    <tr>
+                        <td class="black__text" colspan="2">Печень (мм, ед.Н.)</td>
+                    </tr>
+                    <tr>
+                        <td>Правая доля по СКЛ</td>
+                        <td><input type="number" class="pis__calc__right"></td>
+                    </tr>
+                    <tr>
+                        <td>Левая доля вертикально</td>
+                        <td><input type="number" class="pis__calc__left"></td>
+                    </tr>
+                    <tr>
+                        <td>ПД аксиально</td>
+                        <td><input type="number" class="pd__calc"></td>
+                    </tr>
+                    <tr>
+                        <td>ХД аксиально</td>
+                        <td><input type="number" class="hd__calc"></td>
+                    </tr>
+                    <tr>
+                        <td>Отношение ХД к ПД</td>
+                        <td class="pd-hd__calc__result"></td>
+                        <td class="noborder">
+                            <button class="pd-hd__calc__btn">Расчет</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>КТ плотность печени N</td>
+                        <td><input type="number" class="pis__calc__plotn"></td>
+                    </tr>
+                    <tr>
+                        <td>МРТ плотнось фаза N</td>
+                        <td><input type="number" class="mrt__faza__n__pech"></td>
+                    </tr>
+                    <tr>
+                        <td>МРТ плотнось п/фаза N</td>
+                        <td><input type="number" class="mrt__faza__pn__pech"></td>
+                    </tr>
+                    <tr>
+                        <td class="black__text" colspan="2">Селезенка (мм, ед.Н.)</td>
+                    </tr>
+                    <tr>
+                        <td>Длина</td>
+                        <td><input type="number" class="pis__sel__dlinna"></td>
+                    </tr>
+                    <tr>
+                        <td>Ширина</td>
+                        <td><input type="number" class="pis__sel__shirina"></td>
+                    </tr>
+                    <tr>
+                        <td>Высота</td>
+                        <td><input type="number" class="pis__sel__visota"></td>
+                    </tr>
+                    <tr>
+                        <td>Пл селезенки КТ N</td>
+                        <td><input type="number" class="plotn__sel"></td>
+                    </tr>
+                    <tr>
+                        <td>Индекс селезенки</td>
+                        <td class="sel__calc__result"></td>
+                        <td class="noborder">
+                            <button class="sel__calc__btn">Расчет</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Оценка плотноси КТ</td>
+                        <td class="pis__plotn__minus"></td>
+                        <td class="noborder hide">0</td>
+                    </tr>
+                    <tr>
+                        <td class="pis__plotn__razdelit"></td>
+                        <td class="noborder">
+                            <button class="pis__plotn__btn">Расчет</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>МРТ плотнось фаза N</td>
+                        <td><input type="number" class="mrt__faza__n__sel"></td>
+                    </tr>
+                    <tr>
+                        <td>МРТ плотнось п/фаза N</td>
+                        <td><input type="number" class="mrt__faza__pn__sel"></td>
+                    </tr>
+                    <tr>
+                        <td>Жировой идекс МРТ</td>
+                        <td class="fat__index__mrt"></td>
+                        <td class="noborder">
+                            <button class="fat__index__mrt__btn">Расчет</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pis__cirroz">
+                <table>
+                    <tr>
+                        <td colspan="4">Отношение ХД к ПД (вероятность цирроза)</td>
+                    </tr>
+                    <tr>
+                        <td>Норма</td>
+                        <td>Погр. знач</td>
+                        <td>96%</td>
+                        <td>99%</td>
+                    </tr>
+                    <tr>
+                        <td class="green">&#60 0.6 </td>
+                        <td class="yellow">0,6-0,65</td>
+                        <td class="orange">&#62 0,65</td>
+                        <td class="red">&#62 0,73</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pis__hepatoz">
+                <table>
+                    <tr>
+                        <td colspan="2">Гепатоз по плотности КТ</td>
+                    </tr>
+                    <tr>
+                        <td>Пл печени &#60</td>
+                        <td>40 ед.Н.</td>
+
+                    </tr>
+                    <tr>
+                        <td>Пл L-S &#60</td>
+                        <td>-9</td>
+                    </tr>
+                    <tr>
+                        <td>Пл L/S &#60</td>
+                        <td>0,9</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pis__index__sel">
+                <table>
+                    <tr>
+                        <td colspan="2">Индекс селезенки</td>
+                    </tr>
+                    <tr>
+                        <td class="green">&#60 500</td>
+                        <td>Норма</td>
+                    </tr>
+                    <tr>
+                        <td class="red">&#62 500</td>
+                        <td>Cпленомегалия</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pis__mrt__hepatoz">
+                <table>
+                    <tr>
+                        <td colspan="4">Жировой индекс МРТ (гепатоз)</td>
+                    </tr>
+                    <tr>
+                        <td>Норма</td>
+                        <td>I стадия</td>
+                        <td>II стадия</td>
+                        <td>III стадия</td>
+                    </tr>
+                    <tr>
+                        <td class="green">&#60 5</td>
+                        <td class="yellow">5,0 - 33</td>
+                        <td class="orange">33 - 66</td>
+                        <td class="red">&#62 66</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pis__image">
+                <img src="../img/pis__img.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

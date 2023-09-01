@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav__sidebar sidebar__hide">
+            <div class="sidebar__open-close__btn sidebar__btn__hide">
+                <img src="../img/arrow_back.svg" alt="">
+            </div>
+            <div class="sidebar__logo">
+                <a href="../index.html">КАЛЬКУЛЯТОР</a>
+            </div>
+            <div class="sidebar__options">
+                <ul>
+                    <li><a href="./kti.html">Кардиоторакальный индекс (кардиомегалия)</a>
+                    </li>
+                    <li><a href="./liver and spleen.html">Печень, селезенка</a></li>
+                    <li><a href="./adrenal adenoma.html">Индекс вымывания (аденома
+                            надпочечника)</a></li>
+                    <li><a href="./anterior horn index.html">Индекс передних рогов головного
+                            мозга</a></li>
+                    <li><a href="./lateral ventricular index.html">Индекс боковых
+                            желудочков</a></li>
+                    <li><a href="./fourth ventricle index.html">Индекс четвертого
+                            желудочка</a></li>
+                    <li><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
+                    <li><a href="./elips.html">Объем элипса, сферы</a></li>
+                    <li class="sidebar__selected"><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
+                    <li><a href="#">Контрасты КТ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="elips">
+            <div class="elips__table">
+                <button class="btn spine__btn"><img src="../img/calculate.svg" alt=""></button>
+
+
+                <table class="elips__table__1">
+                    <tr>
+                        <td class="black__text" colspan="3">Типы</td>
+                        <td class="black__text">AM</td>
+                        <td class="black__text">MP</td>
+                        <td class="black__text">AP</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>A &#62 M &#62 P</td>
+                        <td>Задняя</td>
+                        <td>Любой</td>
+                        <td>Любой</td>
+                        <td class="gray"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>A &#62 M &#60 P</td>
+                        <td>Двояковог-я</td>
+                        <td class="red" colspan="2">Хоть один красный</td>
+                        <td class="green"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>A &#60 M &#60 P</td>
+                        <td>Передняя</td>
+                        <td>Любой</td>
+                        <td>Любой</td>
+                        <td class="blue"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Все сниж.</td>
+                        <td>Компр-я</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <table class="elips__table__2">
+                    <tr>
+                        <td class="black__text">Шейный</td>
+                        <td class="black__text">A</td>
+                        <td class="black__text">M</td>
+                        <td class="black__text">P</td>
+                        <td class="black__text">Ср</td>
+                        <td class="black__text">AM</td>
+                        <td class="black__text">MP</td>
+                        <td class="black__text">AP</td>
+                    </tr>
+                    <tr>
+                        <td>С3</td>
+                        <td><input class="A" type="number"></td>
+                        <td><input class="B" type="number"></td>
+                        <td><input class="C" type="number"></td>
+                        <td class="spine__calc"></td>
+                        <td class="AB"></td>
+                        <td class="BC"></td>
+                        <td class="AC"></td>
+                    </tr>
+                    <tr>
+                        <td>С4</td>
+                        <td><input class="A" type="number"></td>
+                        <td><input class="B" type="number"></td>
+                        <td><input class="C" type="number"></td>
+                        <td class="spine__calc"></td>
+                        <td class="AB"></td>
+                        <td class="BC"></td>
+                        <td class="AC"></td>
+                    </tr>
+                    <tr>
+                        <td>С5</td>
+                        <td><input class="A" type="number"></td>
+                        <td><input class="B" type="number"></td>
+                        <td><input class="C" type="number"></td>
+                        <td class="spine__calc"></td>
+                        <td class="AB"></td>
+                        <td class="BC"></td>
+                        <td class="AC"></td>
+                    </tr>
+                    <tr>
+                        <td>С6</td>
+                        <td><input class="A" type="number"></td>
+                        <td><input class="B" type="number"></td>
+                        <td><input class="C" type="number"></td>
+                        <td class="spine__calc"></td>
+                        <td class="AB"></td>
+                        <td class="BC"></td>
+                        <td class="AC"></td>
+                    </tr>
+                    <tr>
+                        <td>С7</td>
+                        <td><input class="A" type="number"></td>
+                        <td><input class="B" type="number"></td>
+                        <td><input class="C" type="number"></td>
+                        <td class="spine__calc"></td>
+                        <td class="AB"></td>
+                        <td class="BC"></td>
+                        <td class="AC"></td>
+                    </tr>
+                    <tr>
+                        <td class="black__text">Грудной</td>
+                        <td class="black__text">A</td>
+                        <td class="black__text">M</td>
+                        <td class="black__text">P</td>
+                        <td class="black__text">Ср</td>
+                        <td class="black__text">AM</td>
+                        <td class="black__text">MP</td>
+                        <td class="black__text">AP</td>
+                    </tr>
+                    <tr>
+                        <td>Th1</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th2</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th3</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th4</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th5</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th6</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th7</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th8</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th9</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th10</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th11</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th12</td>
+                        <td><input class="A_1" type="number"></td>
+                        <td><input class="B_1" type="number"></td>
+                        <td><input class="C_1" type="number"></td>
+                        <td class="spine__calc_1"></td>
+                        <td class="AB_1"></td>
+                        <td class="BC_1"></td>
+                        <td class="AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td class="black__text">Поясничный</td>
+                        <td class="black__text">A</td>
+                        <td class="black__text">M</td>
+                        <td class="black__text">P</td>
+                        <td class="black__text">Ср</td>
+                        <td class="black__text">AM</td>
+                        <td class="black__text">MP</td>
+                        <td class="black__text">AP</td>
+                    </tr>
+                    <tr>
+                        <td>L1</td>
+                        <td><input class="A_2" type="number"></td>
+                        <td><input class="B_2" type="number"></td>
+                        <td><input class="C_2" type="number"></td>
+                        <td class="spine__calc_2"></td>
+                        <td class="AB_2"></td>
+                        <td class="BC_2"></td>
+                        <td class="AC_2"></td>
+                    </tr>
+                    <tr>
+                        <td>L2</td>
+                        <td><input class="A_2" type="number"></td>
+                        <td><input class="B_2" type="number"></td>
+                        <td><input class="C_2" type="number"></td>
+                        <td class="spine__calc_2"></td>
+                        <td class="AB_2"></td>
+                        <td class="BC_2"></td>
+                        <td class="AC_2"></td>
+                    </tr>
+                    <tr>
+                        <td>L3</td>
+                        <td><input class="A_2" type="number"></td>
+                        <td><input class="B_2" type="number"></td>
+                        <td><input class="C_2" type="number"></td>
+                        <td class="spine__calc_2"></td>
+                        <td class="AB_2"></td>
+                        <td class="BC_2"></td>
+                        <td class="AC_2"></td>
+                    </tr>
+                    <tr>
+                        <td>L4</td>
+                        <td><input class="A_2" type="number"></td>
+                        <td><input class="B_2" type="number"></td>
+                        <td><input class="C_2" type="number"></td>
+                        <td class="spine__calc_2"></td>
+                        <td class="AB_2"></td>
+                        <td class="BC_2"></td>
+                        <td class="AC_2"></td>
+                    </tr>
+                    <tr>
+                        <td>L5</td>
+                        <td><input class="A_2" type="number"></td>
+                        <td><input class="B_2" type="number"></td>
+                        <td><input class="C_2" type="number"></td>
+                        <td class="spine__calc_2"></td>
+                        <td class="AB_2"></td>
+                        <td class="BC_2"></td>
+                        <td class="AC_2"></td>
+                    </tr>
+                </table>
+
+
+                <table class="elips__table__3">
+                    <tr>
+                        <td colspan="2" class="black__text">Степень Деформации</td>
+                    </tr>
+                    <tr>
+                        <td>&#60 20%</td>
+                        <td>Нет Деформации</td>
+                    </tr>
+                    <tr>
+                        <td class="green">20 - 25%</td>
+                        <td>Мягкая ст. I</td>
+                    </tr>
+                    <tr>
+                        <td class="yellow">25 - 40%</td>
+                        <td>Умеренная ст. II</td>
+                    </tr>
+                    <tr>
+                        <td class="red">&#62 40%</td>
+                        <td>Тяжелая ст. III</td>
+                    </tr>
+                </table>
+
+                <table class="elips__table__4">
+                    <tr>
+                        <td class="black__text">Шейный</td>
+                        <td class="black__text" colspan="3">Степень (по макс. цвету)</td>
+                    </tr>
+                    <tr>
+                        <td>С3</td>
+                        <td class="S_AB"></td>
+                        <td class="S_BC"></td>
+                        <td class="S_AC"></td>
+                    </tr>
+                    <tr>
+                        <td>С4</td>
+                        <td class="S_AB"></td>
+                        <td class="S_BC"></td>
+                        <td class="S_AC"></td>
+                    </tr>
+                    <tr>
+                        <td>С5</td>
+                        <td class="S_AB"></td>
+                        <td class="S_BC"></td>
+                        <td class="S_AC"></td>
+                    </tr>
+                    <tr>
+                        <td>С6</td>
+                        <td class="S_AB"></td>
+                        <td class="S_BC"></td>
+                        <td class="S_AC"></td>
+                    </tr>
+                    <tr>
+                        <td>С7</td>
+                        <td class="S_AB"></td>
+                        <td class="S_BC"></td>
+                        <td class="S_AC"></td>
+                    </tr>
+                    <tr>
+                        <td class="black__text">Грудной</td>
+                        <td class="black__text" colspan="3">Степень (по макс. цвету)</td>
+                    </tr>
+                    <tr>
+                        <td>Th1</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th2</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th3</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th4</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th5</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th6</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th7</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th8</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th9</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th10</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th11</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td>Th12</td>
+                        <td class="S_AB_1"></td>
+                        <td class="S_BC_1"></td>
+                        <td class="S_AC_1"></td>
+                    </tr>
+                    <tr>
+                        <td class="black__text">Поясничный</td>
+                        <td class="black__text" colspan="3">Степень (по макс. цвету)</td>
+                    </tr>
+                    <tr>
+                        <td>L1</td>
+                        <td class="S_AB_2"></td>
+                        <td class="S_BC_2"></td>
+                        <td class="S_AC_2"></td>
+                    </tr>
+                    <tr>
+                        <td>L2</td>
+                        <td class="S_AB_2"></td>
+                        <td class="S_BC_2"></td>
+                        <td class="S_AC_2"></td>
+                    </tr>
+                    <tr>
+                        <td>L3</td>
+                        <td class="S_AB_2"></td>
+                        <td class="S_BC_2"></td>
+                        <td class="S_AC_2"></td>
+                    </tr>
+                    <tr>
+                        <td>L4</td>
+                        <td class="S_AB_2"></td>
+                        <td class="S_BC_2"></td>
+                        <td class="S_AC_2"></td>
+                    </tr>
+                    <tr>
+                        <td>L5</td>
+                        <td class="S_AB_2"></td>
+                        <td class="S_BC_2"></td>
+                        <td class="S_AC_2"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

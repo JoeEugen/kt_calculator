@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav__sidebar sidebar__hide">
+            <div class="sidebar__open-close__btn sidebar__btn__hide">
+                <img src="../img/arrow_back.svg" alt="">
+            </div>
+            <div class="sidebar__logo">
+                <a href="../index.html">КАЛЬКУЛЯТОР</a>
+            </div>
+            <div class="sidebar__options">
+                <ul>
+                    <li><a href="./kti.html">Кардиоторакальный индекс (кардиомегалия)</a>
+                    </li>
+                    <li><a href="./liver and spleen.html">Печень, селезенка</a></li>
+                    <li><a href="./adrenal adenoma.html">Индекс вымывания (аденома
+                            надпочечника)</a></li>
+                    <li><a href="./anterior horn index.html">Индекс передних рогов головного
+                            мозга</a></li>
+                    <li class="sidebar__selected"><a href="./lateral ventricular index.html">Индекс боковых
+                            желудочков</a></li>
+                    <li><a href="./fourth ventricle index.html">Индекс четвертого желудочка</a></li>
+                    <li><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
+                    <li><a href="./elips.html">Объем элипса, сферы</a></li>
+                    <li><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
+                    <li><a href="#">Контрасты КТ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lat__vent">
+            <div class="lat__vent__table">
+                <table>
+                    <tr>
+                        <td>Ширина боковых желудочков</td>
+                        <td><input class="lat__vent__width" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Ширина желудочка <span class="red__text">до</span> 40 лет</td>
+                        <td>&#60 12мм</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина желудочка <span class="red__text">до</span> 40 лет</td>
+                        <td>&#60 15мм</td>
+                    </tr>
+                    <tr>
+                        <td>Расстояние между костями</td>
+                        <td><input class="lat__vent__distance" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td class="norm_before_50">Норма <span class="red__text">до</span> 50 лет</td>
+                        <td class="norm_before_50">18,4-22,1</td>
+                    </tr>
+                    <tr>
+                        <td class="norm_after_50">Норма <span class="red__text">после</span> 50 лет</td>
+                        <td class="norm_after_50">22,6-26</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="lat__vent__btn">Расчет</button>
+                        </td>
+                        <td class="lat__vent__index"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="lat__vent__img">
+                <img src="../img/lat__vent.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+/* Цвета для сайта
+
+#e27d60
+#8cc0ad
+#e8a87c
+#c38d9e
+#41b3a3
+
+*/
+
+/* Шрифты для сайта
+
+font-family: 'Ubuntu Mono', monospace;
+
+*/
+
+/* Сброс стилей */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Контейнер */
+
+.container {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #8cc0ad;
+
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 25px;
+    font-weight: 700;
+
+    color: white;
+    text-shadow: 0 0 3px black;
+
+    overflow-x: hidden;
+
+    position: relative;
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+table {
+    margin: 5% auto;
+}
+
+td {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.noborder {
+    border: #41b3a3;
+}
+
+button {
+    background: #508370;
+    border-radius: 10px;
+    width: 100%;
+    padding: 3px;
+    border: 2px solid #508370;
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+button:hover {
+    border: 2px solid #ddd7d2;
+    transition: .4s linear;
+}
+
+input {
+    text-align: center;
+    background: #bce0d3;
+    max-width: 70px;
+    border-radius: 10px;
+}
+
+.invisible {
+    display: none;
+}
+
+.hide {
+    color: #8cc0ad;
+    text-shadow: none;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+/* Цвета */
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.orange {
+    background: orange;
+}
+
+.red {
+    background: red;
+}
+
+.gray {
+    background: gray;
+}
+
+.blue {
+    background: blue;
+}
+
+.yellow__text {
+    color: yellow;
+}
+
+.green__text {
+    color: green;
+}
+
+.red__text {
+    color: red;
+}
+
+.black__text {
+    color: #000000;
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+/* Боковая панель */
+
+.nav__sidebar {
+    background-color: #41b3a3;
+    width: 325px;
+    min-height: 100%;
+
+    left: 0;
+
+    position: absolute;
+    z-index: 9;
+}
+
+.sidebar__open-close__btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #41b3a3;
+
+    cursor: pointer;
+
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    left: 300px;
+
+    transition: 1s linear;
+}
+
+.sidebar__btn__invisible {
+    display: none;
+}
+
+.sidebar__open-close__btn:hover {
+    transition: .3s linear;
+    filter: contrast(125%)
+}
+
+.sidebar__hide {
+    left: -300px;
+}
+
+.sidebar__btn__hide {
+    transition: 1s linear;
+    transform: rotate(180deg);
+}
+
+.sidebar__logo {
+    font-weight: 700;
+    font-size: 38px;
+
+    text-align: center;
+    color: #ff8737;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.sidebar__options li {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.sidebar__options li::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #c7c7c7;
+}
+
+.sidebar__options li::after {
+    left: 45%;
+    transform: translateX(-45%);
+    transition: .3s linear;
+}
+
+.sidebar__options li:hover::after {
+    width: 80%;
+}
+
+.sidebar__options li:hover {
+    color: #fe781e;
+    text-shadow: (237, 95, 0) 0 3px #c7c7c7;
+    transition: .3s linear;
+}
+
+.sidebar__selected {
+    color: #fe781e;
+    text-shadow: (237, 95, 0) 0 3px #c7c7c7;
+}
+
+/* ======   Главная страница  ======== */
+
+/* Кардиоторакальный индекс (кардиомегалия) */
+
+.kti {
+    display: grid;
+    grid-template-areas:
+        "calc_1 table_inner"
+        "calc_2 table_img";
+    justify-content: center;
+    padding-top: 2%;
+    column-gap: 2%;
+}
+
+.kti__table {
+    margin: auto;
+    grid-area: table_inner;
+}
+
+.kti__calc__1 {
+    margin: auto;
+    grid-area: calc_1;
+}
+
+.kti__calc__2 {
+    margin: auto;
+    grid-area: calc_2;
+}
+
+.kti__image {
+    margin: auto;
+    grid-area: table_img;
+}
+
+/* Печень и селезенка */
+
+.container__pis {
+    display: grid;
+    grid-template-areas:
+        "pis__calc   pis__cirroz"
+        "pis__calc   pis__hepatoz"
+        "pis__calc   pis__index__sel"
+        "pis__calc   pis__mrt__hepatoz"
+        "pis__calc   pis__image";
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.pis__calc {
+    margin: 0 auto;
+    grid-area: pis__calc;
+}
+
+.pis__cirroz {
+    margin: auto;
+    grid-area: pis__cirroz;
+}
+
+.pis__hepatoz {
+    margin: auto;
+    grid-area: pis__hepatoz;
+}
+
+.pis__index__sel {
+    margin: auto;
+    grid-area: pis__index__sel;
+}
+
+.pis__mrt__hepatoz {
+    margin: auto;
+    grid-area: pis__mrt__hepatoz;
+}
+
+.pis__image {
+    margin: auto;
+    grid-area: pis__image;
+}
+
+/* Индекс вымывания (аденома надпочечника) */
+
+/* Индекс передних рогов головного мозга */
+
+/* Индекс боковых желудочков */
+
+/* Индекс четвертого желудочка */
+
+/* Криволинейный объем для гематом */
+
+/* Объем элипса, сферы */
+
+/* Деформации позвонков/снижение высоты */
+
+.elips__table {
+    display: grid;
+    grid-template-areas:
+        "elips__table__1 elips__table__3"
+        "elips__table__2 elips__table__4";
+    justify-content: center;
+    padding-top: 2%;
+    gap: 2%;
+}
+
+.elips__table__1 {
+    margin: 0 auto;
+    grid-area: elips__table__1;
+}
+
+.elips__table__2 {
+    margin: auto;
+    grid-area: elips__table__2;
+}
+
+.elips__table__3 {
+    margin: auto;
+    grid-area: elips__table__3;
+}
+
+.elips__table__4 {
+    margin: auto;
+    grid-area: elips__table__4;
+}
+
+.elips__table .btn {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    top: 35%;
+    right: 1%;
+
+}
+
+.elips__table button img {
+    height: 100%;
+}
+
+/* Оптимизация */
+
+@media screen and (max-width: 825px) {
+    .container {
+        height: 100%;
+        margin: 0 auto;
+        background-color: #8cc0ad;
+
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 18px;
+        font-weight: 700;
+
+        color: white;
+        text-shadow: 0 0 3px black;
+
+        overflow-x: hidden;
+
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    td {
+        border: 2px solid rgb(0, 0, 0);
+        padding: 5px;
+        text-align: center;
+    }
+
+    input {
+        max-width: 50px;
+    }
+
+    .noborder {
+        border: #41b3a3;
+    }
+
+    button {
+        background: #508370;
+        border-radius: 10px;
+        width: 100%;
+        padding: 3px;
+        border: 2px solid #508370;
+        text-shadow: 0 0 3px rgb(255, 255, 255);
+        color: #000000;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .sidebar__btn__invisible {
+        display: block;
+    }
+
+    .sidebar__open-close__btn {
+        display: flex;
+        align-items: center;
+
+        top: 30px;
+        left: 300px;
+    }
+
+    .sidebar__hide {
+        left: -315px;
+    }
+
+    .sidebar__btn__hide {
+        transition: 1s linear;
+        transform: rotate(180deg);
+    }
+
+    .sidebar__logo {
+        font-weight: 700;
+        font-size: 30px;
+
+        text-align: center;
+        color: #ff8737;
+
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .kti {
+        display: grid;
+        grid-template-areas:
+            "calc_1"
+            "calc_2"
+            "table_inner"
+            "table_img";
+        justify-content: center;
+        padding-top: 2%;
+        column-gap: 2%;
+    }
+
+    .container__pis {
+        display: grid;
+        grid-template-areas:
+            "pis__calc"
+            "pis__cirroz"
+            "pis__hepatoz"
+            "pis__index__sel"
+            "pis__mrt__hepatoz"
+            "pis__image";
+        justify-content: center;
+        padding-top: 2%;
+    }
+
+    .elips__table {
+        display: grid;
+        grid-template-areas:
+            "elips__table__1"
+            "elips__table__2"
+            "elips__table__3"
+            "elips__table__4";
+        justify-content: center;
+
+    }
+
+    .elips__table .btn {
+        position: absolute;
+        width: 7%;
+        height: 7%;
+        top: 50%;
+        right: 1%;
+
+    }
+}

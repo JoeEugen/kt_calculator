@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav__sidebar sidebar__hide">
+            <div class="sidebar__open-close__btn sidebar__btn__hide">
+                <img src="../img/arrow_back.svg" alt="">
+            </div>
+            <div class="sidebar__logo">
+                <a href="../index.html">КАЛЬКУЛЯТОР</a>
+            </div>
+            <div class="sidebar__options">
+                <ul>
+                    <li><a href="./kti.html">Кардиоторакальный индекс (кардиомегалия)</a>
+                    </li>
+                    <li><a href="./liver and spleen.html">Печень, селезенка</a></li>
+                    <li><a href="./adrenal adenoma.html">Индекс вымывания (аденома
+                            надпочечника)</a></li>
+                    <li><a href="./anterior horn index.html">Индекс передних рогов головного
+                            мозга</a></li>
+                    <li><a href="./lateral ventricular index.html">Индекс боковых
+                            желудочков</a></li>
+                    <li><a href="./fourth ventricle index.html">Индекс четвертого
+                            желудочка</a></li>
+                    <li class="sidebar__selected"><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
+                    <li><a href="./elips.html">Объем элипса, сферы</a></li>
+                    <li><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
+                    <li><a href="#">Контрасты КТ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hematoma">
+            <div class="hematoma__table">
+                <table>
+                    <tr>
+                        <td class="black__text" colspan="2">Длина</td>
+                        <td class="black__text" colspan="2">Ширина</td>
+                        <td class="black__text" colspan="2">Толщина</td>
+                    </tr>
+                    <tr>
+                        <td>L1</td>
+                        <td><input class="hematoma__L" type="number"></td>
+                        <td>B1</td>
+                        <td><input class="hematoma__B" type="number"></td>
+                        <td>S1</td>
+                        <td><input class="hematoma__S" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>L2</td>
+                        <td><input class="hematoma__L" type="number"></td>
+                        <td>B2</td>
+                        <td><input class="hematoma__B" type="number"></td>
+                        <td>S2</td>
+                        <td><input class="hematoma__S" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>L3</td>
+                        <td><input class="hematoma__L" type="number"></td>
+                        <td>B3</td>
+                        <td><input class="hematoma__B" type="number"></td>
+                        <td>S3</td>
+                        <td><input class="hematoma__S" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>L4</td>
+                        <td><input class="hematoma__L" type="number"></td>
+                        <td>B4</td>
+                        <td><input class="hematoma__B" type="number"></td>
+                        <td>S4</td>
+                        <td><input class="hematoma__S" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>L5</td>
+                        <td><input class="hematoma__L" type="number"></td>
+                        <td>B5</td>
+                        <td><input class="hematoma__B" type="number"></td>
+                        <td>S5</td>
+                        <td><input class="hematoma__S" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>L6</td>
+                        <td><input class="hematoma__L" type="number"></td>
+                        <td>B6</td>
+                        <td><input class="hematoma__B" type="number"></td>
+                        <td>S6</td>
+                        <td><input class="hematoma__S" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>L7</td>
+                        <td><input class="hematoma__L" type="number"></td>
+                        <td>B7</td>
+                        <td><input class="hematoma__B" type="number"></td>
+                        <td>S7</td>
+                        <td><input class="hematoma__S" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>L8</td>
+                        <td><input class="hematoma__L" type="number"></td>
+                        <td>B8</td>
+                        <td><input class="hematoma__B" type="number"></td>
+                        <td>S8</td>
+                        <td><input class="hematoma__S" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td class="black__text">Сумма L</td>
+                        <td class="hematoma__L__summa"></td>
+                        <td class="black__text">Сумма B</td>
+                        <td class="hematoma__B__summa"></td>
+                        <td class="black__text">Сумма S</td>
+                        <td class="hematoma__S__summa"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="black__text">Объем мл (см кубических)</td>
+                        <td colspan="2" class="hematoma__result"></td>
+                        <td colspan="2"><button class="hematoma__btn">Расчет</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

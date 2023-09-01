@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav__sidebar sidebar__hide">
+            <div class="sidebar__open-close__btn sidebar__btn__hide">
+                <img src="../img/arrow_back.svg" alt="">
+            </div>
+            <div class="sidebar__logo">
+                <a href="../index.html">КАЛЬКУЛЯТОР</a>
+            </div>
+            <div class="sidebar__options">
+                <ul>
+                    <li><a href="./kti.html">Кардиоторакальный индекс (кардиомегалия)</a>
+                    </li>
+                    <li><a href="./liver and spleen.html">Печень, селезенка</a></li>
+                    <li class="sidebar__selected"><a href="./adrenal adenoma.html">Индекс вымывания (аденома
+                            надпочечника)</a></li>
+                    <li><a href="./anterior horn index.html">Индекс передних рогов головного мозга</a></li>
+                    <li><a href="./lateral ventricular index.html">Индекс боковых желудочков</a></li>
+                    <li><a href="./fourth ventricle index.html">Индекс четвертого желудочка</a></li>
+                    <li><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
+                    <li><a href="./elips.html">Объем элипса, сферы</a></li>
+                    <li><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
+                    <li><a href="#">Контрасты КТ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="adrenal">
+            <div class="adrenal__kt">
+                <table>
+                    <tr>
+                        <td class="black__text noborder" colspan="2">КТ</td>
+                    </tr>
+                    <tr>
+                        <td>Плотность HU натив</td>
+                        <td><input class="adrenal__kt__plotn" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>HU вен (60-75 сек)</td>
+                        <td><input class="adrenal__kt__ven" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>HU отср (10-15 мин)</td>
+                        <td><input class="adrenal__kt__ots" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="adrenal__kt__btn">Расчет</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Абсолютный индекс вымывания</td>
+                        <td class="adrenal__kt__abs"></td>
+                    </tr>
+                    <tr>
+                        <td>Относительный индекс вымывания</td>
+                        <td class="adrenal__kt__otnos"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="adrenal__mrt">
+                <table>
+                    <tr>
+                        <td class="black__text noborder" colspan="2">МРТ</td>
+                    </tr>
+                    <tr>
+                        <td>Надпочечник противофаза</td>
+                        <td><input class="adrenal__mrt__protivofaza" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Надпочечник фаза</td>
+                        <td><input class="adrenal__mrt__faza" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Селезенка противофаза</td>
+                        <td><input class="spleen__mrt__protivofaza" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Селезенка фаза</td>
+                        <td><input class="spleen__mrt__faza" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="adrenal__mrt__btn">Расчет</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Индекс</td>
+                        <td class="adrenal__mrt__index"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
