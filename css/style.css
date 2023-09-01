@@ -347,37 +347,37 @@ img {
 
 /* Деформации позвонков/снижение высоты */
 
-.elips__table {
+.spine__table {
     display: grid;
     grid-template-areas:
-        "elips__table__1 elips__table__3"
-        "elips__table__2 elips__table__4";
+        "spine__table__1 spine__table__3"
+        "spine__table__2 spine__table__4";
     justify-content: center;
     padding-top: 2%;
     gap: 2%;
 }
 
-.elips__table__1 {
+.spine__table__1 {
     margin: 0 auto;
-    grid-area: elips__table__1;
+    grid-area: spine__table__1;
 }
 
-.elips__table__2 {
+.spine__table__2 {
     margin: auto;
-    grid-area: elips__table__2;
+    grid-area: spine__table__2;
 }
 
-.elips__table__3 {
+.spine__table__3 {
     margin: auto;
-    grid-area: elips__table__3;
+    grid-area: spine__table__3;
 }
 
-.elips__table__4 {
+.spine__table__4 {
     margin: auto;
-    grid-area: elips__table__4;
+    grid-area: spine__table__4;
 }
 
-.elips__table .btn {
+.spine__table .btn {
     position: absolute;
     width: 5%;
     height: 5%;
@@ -386,7 +386,7 @@ img {
 
 }
 
-.elips__table button img {
+.spine__table button img {
     height: 100%;
 }
 
@@ -499,7 +499,7 @@ img {
         padding-top: 2%;
     }
 
-    .elips__table {
+    .spine__table {
         display: grid;
         grid-template-areas:
             "elips__table__1"
@@ -510,12 +510,11 @@ img {
 
     }
 
-    .elips__table .btn {
+    .spine__table .btn {
         position: absolute;
         width: 7%;
         height: 7%;
         top: 50%;
         right: 1%;
-
     }
 }
