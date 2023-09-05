@@ -5,67 +5,26 @@ document.querySelector('.sidebar__open-close__btn').addEventListener('click', ()
     document.querySelector('.nav__sidebar').classList.toggle('sidebar__hide');
 })
 
-// Кардиоторакальный индекс (кардиомегалия)
-try {
-    document.querySelector('.kti__calc__btn__1').addEventListener('click', () => {
-        let heart_diam = +document.querySelector('.kti__calc__heart').value;
-        let chest_diam = +document.querySelector('.kti__calc__chest').value;
-        let kti_result = document.querySelector('.kti__index__result');
+// Ограничение инпутов, только цифры
 
-        kti_result.innerHTML = Math.floor(heart_diam / chest_diam * 100)
+const allInputs = document.querySelectorAll('input[type="number"]');
 
-        let kti_color = document.querySelector('.kti__index__result');
-
-        kti_color.classList.remove('yellow')
-        kti_color.classList.remove('orange')
-        kti_color.classList.remove('red')
-        kti_color.classList.remove('green')
-
-        if (kti_result.innerHTML < 50 || kti_result.innerHTML == 50) {
-            kti_color.classList.add('green')
+allInputs.forEach(input => {
+    input.addEventListener('keydown', e => {
+        if ([46, 8, 9, 27, 13, 110, 190].indexOf(e.keyCode) !== -1 |
+            (e.keyCode === 65 && e.ctrlKey === true) ||
+            (e.keyCode === 67 && e.ctrlKey === true) ||
+            (e.keyCode === 88 && e.ctrlKey === true) ||
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+            return;
         }
-        else if (kti_result.innerHTML > 50 && kti_result.innerHTML < 57) {
-            kti_color.classList.add('yellow')
-        }
-        else if (kti_result.innerHTML > 56 && kti_result.innerHTML < 61) {
-            kti_color.classList.add('orange')
-        }
-        else if (kti_result.innerHTML > 60) {
-            kti_color.classList.add('red')
-        }
-    })
 
-    document.querySelector('.kti__calc__btn__2').addEventListener('click', () => {
-        let mrgk = +document.querySelector('.kti__calc__mrgk').value;
-        let pr = +document.querySelector('.kti__calc__pr').value;
-        let lr = +document.querySelector('.kti__calc__lr').value;
-        let kti_result = document.querySelector('.kti__index__result__2');
-
-        kti_result.innerHTML = Math.floor((pr + lr) / mrgk * 100)
-
-        let kti_color = document.querySelector('.kti__index__result__2');
-
-        kti_color.classList.remove('yellow')
-        kti_color.classList.remove('orange')
-        kti_color.classList.remove('red')
-        kti_color.classList.remove('green')
-
-        if (kti_result.innerHTML < 50 || kti_result.innerHTML == 50) {
-            kti_color.classList.add('green')
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) &&
+            (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
         }
-        else if (kti_result.innerHTML > 50 && kti_result.innerHTML < 57) {
-            kti_color.classList.add('yellow')
-        }
-        else if (kti_result.innerHTML > 56 && kti_result.innerHTML < 61) {
-            kti_color.classList.add('orange')
-        }
-        else if (kti_result.innerHTML > 60) {
-            kti_color.classList.add('red')
-        }
-    })
-}
-
-catch { console.log('err') }
+    });
+});
 
 
 // Печень и селезенка
@@ -273,52 +232,7 @@ try {
 catch { console.log('err') }
 
 
-// Индекс вымывания (аденома надпочечника)
 
-try {
-
-    document.querySelector('.adrenal__kt__btn').addEventListener('click', () => {
-        let plotn = +document.querySelector('.adrenal__kt__plotn').value;
-        let ven = +document.querySelector('.adrenal__kt__ven').value;
-        let ots = +document.querySelector('.adrenal__kt__ots').value;
-
-        let abs = document.querySelector('.adrenal__kt__abs');
-        let otnos = document.querySelector('.adrenal__kt__otnos');
-
-        let result_abs = ((ven - ots) / (ven - plotn)) * 100;
-        abs.innerHTML = result_abs.toFixed(2);
-
-        let result_otn = ((ven - ots) / ven) * 100;
-        otnos.innerHTML = result_otn.toFixed(2);
-
-
-        abs.classList.remove('red')
-        abs.classList.remove('green')
-
-        otnos.classList.remove('red')
-        otnos.classList.remove('green')
-
-        if (abs.innerHTML > 60) abs.classList.add('green');
-        else abs.classList.add('red');
-
-        if (otnos.innerHTML > 40) otnos.classList.add('green');
-        else otnos.classList.add('red');
-    })
-
-    document.querySelector('.adrenal__mrt__btn').addEventListener('click', () => {
-        let protivofaza = +document.querySelector('.adrenal__mrt__protivofaza').value;
-        let faza = +document.querySelector('.adrenal__mrt__faza').value;
-        let protivofaza_spleen = +document.querySelector('.spleen__mrt__protivofaza').value;
-        let faza_spleen = +document.querySelector('.spleen__mrt__faza').value;
-
-        let index = document.querySelector('.adrenal__mrt__index');
-
-        let result = ((protivofaza / protivofaza_spleen) / (faza / faza_spleen)) * 100;
-        index.innerHTML = result.toFixed(2);
-    })
-}
-
-catch { console.log('err') }
 
 // Индекс передних рогов головного мозга
 

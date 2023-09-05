@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-
+    <title>КАЛЬКУЛЯТОР</title>
     <link rel="stylesheet" href="../css/style.css">
 
     <script src="../script/script.js" defer></script>
@@ -35,7 +31,6 @@
                     <li><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
                     <li><a href="./elips.html">Объем элипса, сферы</a></li>
                     <li><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
-                    <li><a href="#">Контрасты КТ</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +39,7 @@
             <div class="pis__calc">
                 <table>
                     <tr>
-                        <td class="black__text" colspan="2">Печень (мм, ед.Н.)</td>
+                        <th class="black__text" colspan="2">Печень (мм, ед.Н.)</th>
                     </tr>
                     <tr>
                         <td>Правая доля по СКЛ</td>
@@ -82,7 +77,7 @@
                         <td><input type="number" class="mrt__faza__pn__pech"></td>
                     </tr>
                     <tr>
-                        <td class="black__text" colspan="2">Селезенка (мм, ед.Н.)</td>
+                        <th class="black__text" colspan="2">Селезенка (мм, ед.Н.)</th>
                     </tr>
                     <tr>
                         <td>Длина</td>
@@ -110,7 +105,7 @@
                     <tr>
                         <td rowspan="2">Оценка плотноси КТ</td>
                         <td class="pis__plotn__minus"></td>
-                        <td class="noborder hide">0</td>
+                        <td class="noborder hide">&nbsp</td>
                     </tr>
                     <tr>
                         <td class="pis__plotn__razdelit"></td>
@@ -138,13 +133,13 @@
             <div class="pis__cirroz">
                 <table>
                     <tr>
-                        <td colspan="4">Отношение ХД к ПД (вероятность цирроза)</td>
+                        <th class="black__text" colspan="4">Отношение ХД к ПД (вероятность цирроза)</th>
                     </tr>
                     <tr>
-                        <td>Норма</td>
-                        <td>Погр. знач</td>
-                        <td>96%</td>
-                        <td>99%</td>
+                        <th>Норма</th>
+                        <th>Погр. знач</th>
+                        <th>96%</th>
+                        <th>99%</th>
                     </tr>
                     <tr>
                         <td class="green">&#60 0.6 </td>
@@ -157,7 +152,7 @@
             <div class="pis__hepatoz">
                 <table>
                     <tr>
-                        <td colspan="2">Гепатоз по плотности КТ</td>
+                        <th class="black__text" colspan="2">Гепатоз по плотности КТ</th>
                     </tr>
                     <tr>
                         <td>Пл печени &#60</td>
@@ -177,7 +172,7 @@
             <div class="pis__index__sel">
                 <table>
                     <tr>
-                        <td colspan="2">Индекс селезенки</td>
+                        <th class="black__text" colspan="2">Индекс селезенки</th>
                     </tr>
                     <tr>
                         <td class="green">&#60 500</td>
@@ -192,13 +187,13 @@
             <div class="pis__mrt__hepatoz">
                 <table>
                     <tr>
-                        <td colspan="4">Жировой индекс МРТ (гепатоз)</td>
+                        <th class="black__text" colspan="4">Жировой индекс МРТ (гепатоз)</th>
                     </tr>
                     <tr>
-                        <td>Норма</td>
-                        <td>I стадия</td>
-                        <td>II стадия</td>
-                        <td>III стадия</td>
+                        <th>Норма</th>
+                        <th>I стадия</th>
+                        <th>II стадия</th>
+                        <th>III стадия</th>
                     </tr>
                     <tr>
                         <td class="green">&#60 5</td>

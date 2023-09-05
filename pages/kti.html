@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-
+    <title>КАЛЬКУЛЯТОР</title>
     <link rel="stylesheet" href="../css/style.css">
 
-    <script src="../script/script.js" defer></script>
+    <script src="../js/kti.js" defer></script>
 </head>
 
 <body>
@@ -35,7 +31,6 @@
                     <li><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
                     <li><a href="./elips.html">Объем элипса, сферы</a></li>
                     <li><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
-                    <li><a href="#">Контрасты КТ</a></li>
                 </ul>
             </div>
         </div>
@@ -43,10 +38,10 @@
             <div class="kti__table">
                 <table class="kti__table__inner">
                     <tr>
-                        <td>Норма</td>
-                        <td>I стадия</td>
-                        <td>II стадия</td>
-                        <td>III стадия</td>
+                        <th class="black__text">Норма</th>
+                        <th class="black__text">I стадия</th>
+                        <th class="black__text">II стадия</th>
+                        <th class="black__text">III стадия</th>
                     </tr>
                     <tr>
                         <td class="green">&#60 50</td>
@@ -60,14 +55,11 @@
                 <table>
                     <tr>
                         <td>Диаметр сердца</td>
-                        <td><input type="number" class="kti__calc__heart"></td>
+                        <td><input type="number" class="kti__calc kti__calc__heart"></td>
                     </tr>
                     <tr>
                         <td>Диаметр грудной клетки</td>
-                        <td><input type="number" class="kti__calc__chest"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><button class="kti__calc__btn__1">Расчет</button></td>
+                        <td><input type="number" class="kti__calc kti__calc__chest"></td>
                     </tr>
                     <tr>
                         <td>Индекс</td>
@@ -88,9 +80,6 @@
                     <tr>
                         <td>ЛР</td>
                         <td><input type="number" class="kti__calc__lr"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><button class="kti__calc__btn__2">Расчет</button></td>
                     </tr>
                     <tr>
                         <td>Индекс</td>

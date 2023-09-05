@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-
+    <title>КАЛЬКУЛЯТОР</title>
     <link rel="stylesheet" href="../css/style.css">
 
     <script src="../script/script.js" defer></script>
@@ -39,7 +35,6 @@
                     <li class="sidebar__selected"><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
                     <li><a href="./elips.html">Объем элипса, сферы</a></li>
                     <li><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
-                    <li><a href="#">Контрасты КТ</a></li>
                 </ul>
             </div>
         </div>
@@ -47,9 +42,9 @@
             <div class="hematoma__table">
                 <table>
                     <tr>
-                        <td class="black__text" colspan="2">Длина</td>
-                        <td class="black__text" colspan="2">Ширина</td>
-                        <td class="black__text" colspan="2">Толщина</td>
+                        <th class="black__text" colspan="2">Длина</th>
+                        <th class="black__text" colspan="2">Ширина</th>
+                        <th class="black__text" colspan="2">Толщина</th>
                     </tr>
                     <tr>
                         <td>L1</td>
@@ -116,15 +111,15 @@
                         <td><input class="hematoma__S" type="number"></td>
                     </tr>
                     <tr>
-                        <td class="black__text">Сумма L</td>
-                        <td class="hematoma__L__summa"></td>
-                        <td class="black__text">Сумма B</td>
-                        <td class="hematoma__B__summa"></td>
-                        <td class="black__text">Сумма S</td>
-                        <td class="hematoma__S__summa"></td>
+                        <th class="black__text">Сумма L</th>
+                        <th class="hematoma__L__summa"></th>
+                        <th class="black__text">Сумма B</th>
+                        <th class="hematoma__B__summa"></th>
+                        <th class="black__text">Сумма S</th>
+                        <th class="hematoma__S__summa"></th>
                     </tr>
                     <tr>
-                        <td colspan="2" class="black__text">Объем мл (см кубических)</td>
+                        <th colspan="2" class="black__text">Объем мл (см кубических)</th>
                         <td colspan="2" class="hematoma__result"></td>
                         <td colspan="2"><button class="hematoma__btn">Расчет</button></td>
                     </tr>

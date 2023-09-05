@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-
+    <title>КАЛЬКУЛЯТОР</title>
     <link rel="stylesheet" href="../css/style.css">
 
     <script src="../script/script.js" defer></script>
@@ -39,21 +35,20 @@
                     <li><a href="./hematoma.html">Криволинейный объем для гематом</a></li>
                     <li><a href="./elips.html">Объем элипса, сферы</a></li>
                     <li class="sidebar__selected"><a href="./spine.html">Деформации позвонков/снижение высоты</a></li>
-                    <li><a href="#">Контрасты КТ</a></li>
                 </ul>
             </div>
         </div>
         <div class="spine">
             <div class="spine__table">
-                <button class="btn spine__btn"><img src="../img/calculate.svg" alt=""></button>
 
+                <button class="btn spine__btn">Расчет</button>
 
                 <table class="spine__table__1">
                     <tr>
-                        <td class="black__text" colspan="3">Типы</td>
-                        <td class="black__text">AM</td>
-                        <td class="black__text">MP</td>
-                        <td class="black__text">AP</td>
+                        <th class="black__text" colspan="3">Типы</th>
+                        <th class="black__text">AM</th>
+                        <th class="black__text">MP</th>
+                        <th class="black__text">AP</th>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -90,14 +85,14 @@
 
                 <table class="spine__table__2">
                     <tr>
-                        <td class="black__text">Шейный</td>
-                        <td class="black__text">A</td>
-                        <td class="black__text">M</td>
-                        <td class="black__text">P</td>
-                        <td class="black__text">Ср</td>
-                        <td class="black__text">AM</td>
-                        <td class="black__text">MP</td>
-                        <td class="black__text">AP</td>
+                        <th class="black__text">Шейный</th>
+                        <th class="black__text">A</th>
+                        <th class="black__text">M</th>
+                        <th class="black__text">P</th>
+                        <th class="black__text">Ср</th>
+                        <th class="black__text">AM</th>
+                        <th class="black__text">MP</th>
+                        <th class="black__text">AP</th>
                     </tr>
                     <tr>
                         <td>С3</td>
@@ -150,14 +145,14 @@
                         <td class="AC"></td>
                     </tr>
                     <tr>
-                        <td class="black__text">Грудной</td>
-                        <td class="black__text">A</td>
-                        <td class="black__text">M</td>
-                        <td class="black__text">P</td>
-                        <td class="black__text">Ср</td>
-                        <td class="black__text">AM</td>
-                        <td class="black__text">MP</td>
-                        <td class="black__text">AP</td>
+                        <th class="black__text">Грудной</th>
+                        <th class="black__text">A</th>
+                        <th class="black__text">M</th>
+                        <th class="black__text">P</th>
+                        <th class="black__text">Ср</th>
+                        <th class="black__text">AM</th>
+                        <th class="black__text">MP</th>
+                        <th class="black__text">AP</th>
                     </tr>
                     <tr>
                         <td>Th1</td>
@@ -280,14 +275,14 @@
                         <td class="AC_1"></td>
                     </tr>
                     <tr>
-                        <td class="black__text">Поясничный</td>
-                        <td class="black__text">A</td>
-                        <td class="black__text">M</td>
-                        <td class="black__text">P</td>
-                        <td class="black__text">Ср</td>
-                        <td class="black__text">AM</td>
-                        <td class="black__text">MP</td>
-                        <td class="black__text">AP</td>
+                        <th class="black__text">Поясничный</th>
+                        <th class="black__text">A</th>
+                        <th class="black__text">M</th>
+                        <th class="black__text">P</th>
+                        <th class="black__text">Ср</th>
+                        <th class="black__text">AM</th>
+                        <th class="black__text">MP</th>
+                        <th class="black__text">AP</th>
                     </tr>
                     <tr>
                         <td>L1</td>
@@ -344,7 +339,7 @@
 
                 <table class="spine__table__3">
                     <tr>
-                        <td colspan="2" class="black__text">Степень Деформации</td>
+                        <th colspan="2" class="black__text">Степень Деформации</th>
                     </tr>
                     <tr>
                         <td>&#60 20%</td>
@@ -366,8 +361,8 @@
 
                 <table class="spine__table__4">
                     <tr>
-                        <td class="black__text">Шейный</td>
-                        <td class="black__text" colspan="3">Степень (по макс. цвету)</td>
+                        <th class="black__text">Шейный</th>
+                        <th class="black__text" colspan="3">Степень</th>
                     </tr>
                     <tr>
                         <td>С3</td>
@@ -400,8 +395,8 @@
                         <td class="S_AC"></td>
                     </tr>
                     <tr>
-                        <td class="black__text">Грудной</td>
-                        <td class="black__text" colspan="3">Степень (по макс. цвету)</td>
+                        <th class="black__text">Грудной</th>
+                        <th class="black__text" colspan="3">Степень</th>
                     </tr>
                     <tr>
                         <td>Th1</td>
@@ -476,8 +471,8 @@
                         <td class="S_AC_1"></td>
                     </tr>
                     <tr>
-                        <td class="black__text">Поясничный</td>
-                        <td class="black__text" colspan="3">Степень (по макс. цвету)</td>
+                        <th class="black__text">Поясничный</th>
+                        <th class="black__text" colspan="3">Степень</th>
                     </tr>
                     <tr>
                         <td>L1</td>
