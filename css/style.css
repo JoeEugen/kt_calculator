@@ -73,6 +73,28 @@ th {
     background-color: #d6814f;
 }
 
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+tr td:last-child {
+    border-right: none;
+}
+
 .noborder {
     background-color: #8cc0ad;
 }
