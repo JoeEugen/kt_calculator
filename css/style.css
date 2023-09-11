@@ -48,11 +48,9 @@ body {
     overflow-x: hidden;
 
     position: relative;
-
 }
 
 table {
-    width: 90%;
     margin: 3% auto;
 }
 
@@ -71,28 +69,6 @@ td {
 
 th {
     background-color: #d6814f;
-}
-
-th:first-child {
-    border-top-left-radius: 10px;
-}
-
-th:last-child {
-    border-top-right-radius: 10px;
-    border-right: none;
-}
-
-
-tr:last-child td:first-child {
-    border-radius: 0 0 0 10px;
-}
-
-tr:last-child td:last-child {
-    border-radius: 0 0 10px 0;
-}
-
-tr td:last-child {
-    border-right: none;
 }
 
 .noborder {
@@ -287,6 +263,11 @@ img {
     justify-content: center;
     padding-top: 2%;
     column-gap: 2%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kti div {
+    width: 100%;
 }
 
 .kti__table {
@@ -320,7 +301,13 @@ img {
         "pis__calc   pis__mrt__hepatoz"
         "pis__calc   pis__image";
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
     padding-top: 2%;
+    column-gap: 2%;
+}
+
+.container__pis div {
+    width: 100%;
 }
 
 .pis__calc {
@@ -374,6 +361,7 @@ img {
         "spine__btn spine__btn"
         "spine__table__2 spine__table__4";
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
     padding-top: 2%;
     gap: 2%;
 }
@@ -425,6 +413,27 @@ img {
         font-size: 15px;
     }
 
+    table {
+        width: 85%;
+    }
+
+    .sidebar__btn__invisible {
+        display: block;
+    }
+
+    .sidebar__logo {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .sidebar__options li {
+        font-size: 18px;
+        margin: 0 30px;
+    }
+
+    input {
+        width: 50px;
+    }
 
     .kti {
         display: grid;
@@ -434,6 +443,7 @@ img {
             "calc_2"
             "table_img";
         justify-content: center;
+        grid-template-columns: 1fr;
         padding-top: 2%;
         column-gap: 2%;
     }
@@ -448,6 +458,7 @@ img {
             "pis__mrt__hepatoz"
             "pis__image";
         justify-content: center;
+        grid-template-columns: 1fr;
         padding-top: 2%;
     }
 
@@ -460,6 +471,7 @@ img {
             "spine__table__4"
             "spine__table__3";
         justify-content: center;
+        grid-template-columns: 1fr;
         padding-top: 2%;
         gap: 2%;
     }
@@ -470,20 +482,38 @@ img {
         font-size: 14px;
     }
 
-    input {
-        width: 50px;
-    }
-
     td,
     th {
         border: 2px solid #8cc0ad;
         padding: 2px 3px;
     }
+
+    .sidebar__logo {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .sidebar__options li {
+        font-size: 20px;
+        margin: 0 30px;
+    }
 }
 
 @media (max-width: 375px) {
+
     .container {
         overflow-x: auto;
+    }
 
+    .nav__sidebar {
+        width: 275px;
+    }
+
+    .sidebar__open-close__btn {
+        left: 250px;
+    }
+
+    .sidebar__hide {
+        left: -260px;
     }
 }
