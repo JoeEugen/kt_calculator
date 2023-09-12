@@ -31,6 +31,10 @@ body {
 
 /* Контейнер */
 
+body {
+    background-color: #41b3a3;
+}
+
 .container {
     height: 100%;
     max-width: 1200px;
@@ -253,6 +257,32 @@ img {
 
 /* ======   Главная страница  ======== */
 
+.main__text {
+    display: grid;
+    grid-template-areas:
+        "table_0 table_1 table_1"
+        "table_0 table_1 table_1"
+        "table_0 table_1 table_1";
+    justify-content: center;
+    padding-top: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main__text__page {
+    grid-area: table_1;
+    text-align: center;
+    font-size: 40px;
+}
+
+.main__text__page a {
+    color: #ffba8b;
+}
+
+.main__text__page a:hover {
+    color: #ff6600;
+    transition: 1s ease;
+}
+
 /* Кардиоторакальный индекс (кардиомегалия) */
 
 .kti {
@@ -406,6 +436,9 @@ img {
         max-width: 200px;
     }
 
+    .main__text {
+        padding-left: 10%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -433,6 +466,30 @@ img {
 
     input {
         width: 50px;
+    }
+
+    .main__text {
+        display: grid;
+        grid-template-areas:
+            "table_1";
+        justify-content: center;
+        padding-top: 2%;
+        grid-template-columns: 1fr;
+    }
+
+    .main__text__page {
+        grid-area: table_1;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .main__text__page a {
+        color: #ffba8b;
+    }
+
+    .main__text__page a:hover {
+        color: #ff6600;
+        transition: 1s ease;
     }
 
     .kti {
